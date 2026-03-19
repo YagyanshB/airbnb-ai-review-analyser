@@ -1,0 +1,10 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="8" cy="8" r="7" fill="url(#gradient16)"/>
+  <path d="M8 4L9.2 6.5H12L9.8 8.5L10.6 11L8 9.2L5.4 11L6.2 8.5L4 6.5H6.8L8 4Z" fill="white"/>
+  <defs>
+    <linearGradient id="gradient16" x1="0" y1="0" x2="16" y2="16">
+      <stop offset="0%" stop-color="#FF385C"/>
+      <stop offset="100%" stop-color="#E31C5F"/>
+    </linearGradient>
+  </defs>
+</svg>
