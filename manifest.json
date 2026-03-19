@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Airbnb Insight AI",
+  "version": "1.0.0",
+  "description": "AI-powered Airbnb review analyzer - Get instant insights on whether a place matches your expectations",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.airbnb.com/*",
+    "https://www.airbnb.co.uk/*",
+    "https://www.airbnb.ca/*",
+    "https://www.airbnb.com.au/*",
+    "https://api.openai.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.airbnb.com/rooms/*",
+        "https://www.airbnb.co.uk/rooms/*",
+        "https://www.airbnb.ca/rooms/*",
+        "https://www.airbnb.com.au/rooms/*"
+      ],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
